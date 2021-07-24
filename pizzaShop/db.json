@@ -1,0 +1,76 @@
+{
+  "pizzaDetails": [
+    {
+      "pizzaId": 1,
+      "pizzaName": "American",
+      "pizzaPic": "./assets/img/pizza_1.jpg",
+      "pizzaPrize": 5
+    },
+    {
+      "pizzaId": 2,
+      "pizzaName": "Italian",
+      "pizzaPic": "./assets/img/pizza_2.jpg",
+      "pizzaPrize": 4
+    },
+    {
+      "pizzaId": 3,
+      "pizzaName": "Spanish",
+      "pizzaPic": "./assets/img/pizza_3.jpg",
+      "pizzaPrize": 3
+    },
+    {
+      "pizzaId": 4,
+      "pizzaName": "Jamaikan",
+      "pizzaPic": "./assets/img/pizza_4.jpg",
+      "pizzaPrize": 6
+    }
+  ],
+  "ingradients": [
+    {
+      "id": 1,
+      "name": "Test 1",
+      "prize": 1
+    },
+    {
+      "id": 2,
+      "name": "Test 2",
+      "prize": 1
+    },
+    {
+      "id": 3,
+      "name": "Test 3",
+      "prize": 1
+    },
+    {
+      "id": 4,
+      "name": "Test 4",
+      "prize": 1
+    }
+  ],
+  "pizzaIngradients": [
+    {
+      "pizzaId": 1,
+      "id": 5,
+      "name": "Test 5",
+      "prize": 0
+    },
+    {
+      "pizzaId": 1,
+      "id": 6,
+      "name": "Test 6",
+      "prize": 0
+    },
+    {
+      "pizzaId": 1,
+      "id": 7,
+      "name": "Test 7",
+      "prize": 0
+    },
+    {
+      "pizzaId": 1,
+      "id": 8,
+      "name": "Test 8",
+      "prize": 0
+    }
+  ]
+}

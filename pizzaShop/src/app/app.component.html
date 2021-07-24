@@ -1,0 +1,19 @@
+<div class="container">
+    <nav class="navbar navbar-expand-sm bg-light">
+
+        <!-- Links -->
+        <ul class="navbar-nav" routerLinkActive="active-link">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="defaultPizza/pizzaList">Pizza</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="customPizza/pizzaCrust">Custom Pizza</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Smile Pizza</a>
+            </li>
+        </ul>
+    </nav>
+    <router-outlet></router-outlet>
+    <app-footer-template class="footer"></app-footer-template>
+</div>

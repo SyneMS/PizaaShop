@@ -1,0 +1,43 @@
+<div style="background-image: url('./assets/img/slices-delicious-pizza-light-background.jpg');">
+    <h4 style="margin-left: 30px;">Customize Ingradients</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-4" style="padding-left: 10px;padding-top: 5px;margin-left: 30px;">
+                    <button type="button" class="btn btn-primary btn-sm" (click)="addSelected()">Add Selected</button>
+                </div>
+            </div>
+            <div class="row" *ngFor="let ingradient of ingradients">
+                <div class="col-md-2" style="padding-top: 5px;margin-left: 30px;">
+                    <input type="checkbox" [(ngModel)]="ingradient.id" (change)="addIngadient(ingradient.id,$event)" />
+                    <label style="padding-left: 10px;">{{ingradient.name}}</label>
+                </div>
+                <div class="col-md-2" style="padding-left: 10px;padding-top: 5px;">
+                    <label style="padding-left: 10px;">{{ingradient.prize | currency}}</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-4" style="padding-left: 10px;padding-top: 5px;">
+                    <button type="button" class="btn btn-primary btn-sm" (click)="removeSelected()">Remove
+                        Selected</button>
+                </div>
+            </div>
+            <div class="row" *ngFor="let pizzaIngradient of pizzaIngradients">
+                <div class="col-md-2" style="padding-top: 5px;">
+                    <input type="checkbox" [(ngModel)]="pizzaIngradient.id"
+                        [checked]="pizzaIngradient.prize === 0 ? true : false"
+                        [disabled]="pizzaIngradient.prize === 0 ? true : false"
+                        (change)="removeIngadient(pizzaIngradient.id,$event)" />
+                    <label style="padding-left: 10px;">{{pizzaIngradient.name}}</label>
+                </div>
+                <div class="col-md-2" style="padding-left: 10px;padding-top: 5px;">
+                    <label style="padding-left: 10px;">{{pizzaIngradient.prize | currency}}</label>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
